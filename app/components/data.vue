@@ -1,1 +1,0 @@
-<template>Component Code</template>

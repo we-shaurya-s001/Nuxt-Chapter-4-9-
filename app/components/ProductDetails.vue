@@ -22,6 +22,5 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const id = route.params.id
 
-// Fetch product details from Fake Store API
 const { data: product, pending, error } = await useFetch(`https://fakestoreapi.com/products/${id}`)
 </script>

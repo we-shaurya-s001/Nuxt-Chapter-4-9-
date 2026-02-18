@@ -1,6 +1,9 @@
-export default defineEventHandler((event) => {
-    return{
+export default defineEventHandler(async (event) => {
+    const { name } = getQuery(event)
 
-        message: `why this server route dont have function , answer this ${name}`
+    const body = await readBody(event)
+
+    return {
+        message: `Hello ${name}, you are ${body.age} years old`
     }
 })

@@ -1,11 +1,9 @@
 <template>
-  <NuxtLink :to="`pages/products/${product.id}`" class="product-card">
-    <img :src="product.image" alt="Product Thumb" />
-    <p>{{ product.title }}</p>
-    <p>{{product.category}}</p>
-    <p>${{ product.price }}</p>
-
-  </NuxtLink>
+  <div class="card">
+    <img :src="product.image" alt="Product Image" />
+    <p class="title">{{ product.title }}</p>
+    <p class="price">${{ product.price }}</p>
+  </div>
 </template>
 
 <script setup>
@@ -15,16 +13,29 @@ defineProps({
 </script>
 
 <style scoped>
-.product-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px 0;
+.card {
+  text-align: center;
+  font-family: sans-serif;
 }
-.product-card img {
-  width: 150px;
-  object-fit: cover;
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.price {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 16px;
 }
 </style>

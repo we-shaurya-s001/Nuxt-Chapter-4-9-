@@ -1,8 +1,9 @@
-import { defineVitestConfig } from '@nuxt/test-utils/config'
+// vitest.config.ts (this should be purely for testing)
+import { defineConfig } from 'vitest/config'
 
-export default defineVitestConfig({
+export default defineConfig({
   test: {
-    environment: 'happy-dom',
-    globals: true
-  }
+    globals: true,
+    environment: 'jsdom', // or 'node' if needed
+  },
 })

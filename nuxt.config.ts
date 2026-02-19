@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
+  plugins: [
+    '~/plugins/pinia.js', 
+  ],
   app:{
     head: {
       title: "Nuxt Dojo",

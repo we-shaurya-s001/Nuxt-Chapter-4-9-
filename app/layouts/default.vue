@@ -40,9 +40,8 @@
 }   
 
 .homeicon{
-      background-color: #26ed3dde;
-      color: #39bddfde
-
+      color: #26ed3dde;
+ font-size: 24px
 }
 
 nav a {

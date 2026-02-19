@@ -1,4 +1,5 @@
 import { add, multiply, subtract } from "../../../utils/math"
+
 import { describe, it, expect } from 'vitest'
 
 describe('Math Utils', () => {
@@ -13,5 +14,5 @@ describe('Math Utils', () => {
   it('Subtracts number correctly'), () => {
     expect(subtract(9,3)).toBe(6)
   }
-
+  
 })

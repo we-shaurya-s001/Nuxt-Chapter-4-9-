@@ -14,3 +14,14 @@ _THIS_ IS ITALIC TOO
 [Traversy media](www.)
 
 `<p>This is a paragraph</p>`
+
+![Markdown Logo](https://markdown.here.)
+
+
+```
+npm install
+
+npm run dev
+
+npm start
+```

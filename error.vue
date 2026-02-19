@@ -13,6 +13,7 @@ defineProps(['error'])
 
 <style scoped>
 .error-page {
+  margin-bottom: 10px;
   text-align: center;
   margin-top: 50px;
   font-family: sans-serif;

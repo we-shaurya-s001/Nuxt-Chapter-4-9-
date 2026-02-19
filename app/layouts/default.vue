@@ -2,7 +2,7 @@
   <div>
     <header class="header">
       <div class="container">
-        <h1 class="logo">MyApp</h1>
+          <NuxtLink class="homeicon" to="/">Home</NuxtLink>
 
         <nav>
           <NuxtLink to="/">Home</NuxtLink>
@@ -37,6 +37,12 @@
 .logo {
   margin: 0;
   font-size: 24px;
+}   
+
+.homeicon{
+      background-color: #26ed3dde;
+      color: #39bddfde
+
 }
 
 nav a {

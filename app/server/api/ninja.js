@@ -1,9 +1,9 @@
 export default defineEventHandler(async (event) => {
-    const { name } = getQuery(event)
+const {name} = useQuery(event);
 
-    const body = await readBody(event)
+const {age} = await useBody(event)
 
-    return {
-        message: `Hello ${name}, you are ${body.age} years old`
+    return{
+        message: `Hello ${name}, you are ${age} years old`
     }
 })

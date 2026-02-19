@@ -1,0 +1,4 @@
+Define default metadata for your entire application in the nuxt.config.ts file using the app.head property.
+The primary way to manage metadata within specific components or pages. 
+A streamlined, fully typed alternative specifically for common SEO tags (like Open Graph and Twitter cards), which helps avoid common mistakes (e.g., using name instead of property)
+
